@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #eef2f3, #8e9eab);
+        }
+
+        .lexend-judul {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .jumbotron {
+            background: linear-gradient(135deg, #004e92, #000428);
+            color: white;
+            padding: 1rem 1rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            color: #6c757d;
+            font-size: 14px;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4 lexend-judul text-center">
+        <div class="jumbotron">
+            <h1 class="display-20"> Welcome to Your Alerts Center, Eka!</h1>
+            <p class="lead">Manage your alerts efficiently in one click!</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card jumbotron">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Status</h5>
+                        <p class="card-text">Your portfolio has <strong> market alerts</strong> that require your
+                            attention.</p>
+                        <button type="button" class="btn btn-outline-danger btn-block"
+                            onclick="$('.alert').alert('close')">Delete All Alerts</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="container text-left jumbotron">
+                    <h2>System Notifications</h2>
+                    <p>Below are the latest activities and alerts regarding your investment account:</p>
+
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Deposit Confirmed!</strong> Your funds have been successfully added to your portfolio.
+                    </div>
+
+                    <div class="alert alert-info alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Market Update:</strong> New trading pairs for Bitcoin (BTC) and Ethereum (ETH) are now
+                        available.
+                    </div>
+
+                    <div class="alert alert-warning alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Verification Required:</strong> Please upload your ID to complete the KYC process and
+                        unlock higher withdrawal limits.
+                    </div>
+
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Security Alert:</strong> An unrecognized login attempt was detected from a new device in
+                        Jakarta.
+                    </div>
+
+                    <div class="alert alert-primary alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Special Offer:</strong> You are eligible for a 0% transaction fee for the next 24 hours!
+                    </div>
+
+                    <div class="alert alert-secondary alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>System Maintenance:</strong> Routine server maintenance is scheduled for Sunday at 02:00
+                        AM.
+                    </div>
+
+                    <div class="alert alert-dark alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Policy Update:</strong> We have updated our Terms of Service. Please review the changes
+                        in your profile.
+                    </div>
+
+                    <div class="alert alert-light border">
+                        <strong>Session Logs:</strong> Last login was 2 hours ago from Surabaya, Indonesia.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="lexend-judul jumbotron text-center">
+            <div class="container">
+                <p class="mb-1">&copy; 2026 <strong>Eka Destriana Putri</strong> - Information Systems ITS.</p>
+                <p class="mb-0">
+                    This project is licensed under the
+                    <a href="#" class="text-secondary font-weight-bold">Web Programming Course</a>.
+                    Part of Web Programming Course Task.
+                </p>
+                <small class="text-muted">Built with Bootstrap 4, especially the JS Alert feature</small>
+            </div>
+        </footer>
+
+</body>
+
+</html>
